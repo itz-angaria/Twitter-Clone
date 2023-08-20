@@ -1,0 +1,172 @@
+/* Apply box-sizing border-box to all elements */
+* {
+	box-sizing: border-box;
+}
+
+/* Center the content vertically and horizontally */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -1.2rem 0 3.2rem;
+}
+
+/* Adjust scaling for the hands-praying icon */
+.overlay-panel i{
+	scale:1;
+}
+
+
+/* Add margin to the welcome-back overlay */
+.overlay-panel.welcome-back i,h2{
+	margin-right: 4rem;
+}
+
+
+
+/* Increase font weight for h1 elements */
+h1 {
+	font-weight: bolder;
+}
+
+/* Adjust font size, weight, and spacing for paragraphs */
+p {
+	font-size: 14px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+}
+
+/* Style links */
+a {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+/* Set width for elements with class 'hh' */
+.hh{
+	width: 25rem;
+}
+
+/* Style for buttons */
+button {
+	border-radius: 8px;
+	border: 1px solid #272221;
+	background-color: #272221;
+    margin:1rem;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bolder;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all 0.1s linear;
+	font-size: 1rem;
+}
+
+/* Button hover effect */
+button:hover{
+	background-color: #41a6e5;
+	color:white;
+	font-size: 1.1rem;
+	border-radius: 50px;
+	border:none;
+}
+
+/* Styling for forms */
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	text-align: center;
+}
+
+/* Styling for input fields */
+input {
+	background-color: #eee;
+	border: none;
+	width: 100%;
+}
+
+/* Styling for the container */
+.container {
+	background-color: #fff;
+	border-radius: 30px;
+	position: relative;
+	max-width: 100%;
+	min-height: 480px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+/* Add margin to the form heading */
+.form-heading{
+	margin-top: 1rem;
+	
+}
+
+/* Styling for form containers */
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 55%;
+}
+
+/* Styling for the login container */
+.log-in-container {
+	z-index: 99;
+	right: 0;
+}
+
+/* Styling for the overlay container */
+.overlay-container {
+    left:0;
+	position: absolute;
+	top: 0;
+	left: 43%;
+	width: 50%;
+	height: 100%;
+	
+}
+
+/* Styling for the overlay */
+.overlay {
+	color: #FFFFFF;
+	position: relative;
+}
+
+/* Styling for overlay panels */
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	width: 50%;
+}
+
+/* Styling for icons */
+.overlay-panel i{
+	color:white;
+	font-size: 4rem;
+}
+
+/* Icon hover effect */
+.iconStyle{
+	transition: 0.3s all linear;
+}
+
+.iconStyle:hover{
+	scale:1.2;
+	cursor: pointer;
+}
+
+/* Placeholder opacity when input is focused */
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}

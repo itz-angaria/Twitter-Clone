@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define custom color variables for Twitter theme */
+body {
+    --twitter-color: #50b7f5;
+    --twitter-background: #d5d6d7;
+}
+
+/* Styling for single feed when hovered */
+.single-feed:hover {
+    background-color: #c0e7ff;
+    cursor: pointer;
+}
+
+/* Styling for trash can icon */
+.fa-trash-can {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+/* Styling for single feed */
+.single-feed {
+    transition: 0.3s ease-out;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--twitter-background);
+}
+
+/* Styling for the upload image div */
+.upload-image-div {
+    padding-left: 1rem;
+}
+
+/* Styling for upload image icon */
+.upload-image-div i {
+    cursor: pointer; 
+}
+
+/* Styling for tweet button */
+.tweet-btn {
+    background: var(--twitter-color);
+    width: 8rem;
+}
+
+/* Styling for second tweet button */
+.tweet-btn-2 {
+    background: var(--twitter-color);
+}
+
+/* Styling for sidebar option */
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styling for icons within sidebar option */
+.sidebarOption .material-symbols-outlined, .fa-message {
+    padding: 20px;
+}
+
+/* Styling for heading within sidebar option */
+.sidebarOption h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* Styling for sidebar option when hovered */
+.sidebarOption:hover {
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color: var(--twitter-color);
+    width: 10rem;
+}
+
+/* Styling for main content container */
+.container-lg {
+    display: flex;
+    max-width: 960px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+/* Styling for sidebar */
+.sidebar {
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.2;
+    min-width: 200px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for last sidebar item */
+.last-sidebar-item {
+    margin-top: auto;
+}
+
+/* Styling for message icon */
+.fa-message {
+    font-size: 30px;
+    color: var(--twitter-color);
+}
+
+/* Styling for main feed section */
+.feed {
+    flex: 0.6;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+/* Styling for single tweet text */
+.single-tweet-text {
+    padding-left: 3rem;
+    font-weight: 600;
+}
+
+/* Styling for container of single tweet image */
+.single-tweet-img-container {
+    width: 30rem;
+    height: 20rem;
+    padding-left: 3rem;
+}
+
+/* Styling for tweet operations */
+.tweet-operations {
+    padding-left: 3rem;
+}
+
+/* Styling for single tweet image */
+.single-tweet-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for image container */
+.img-container img {
+    width: 4rem;
+    border-radius: 50%;
+    border: solid #50b7f5;
+}
+
+/* Styling for username container */
+.username-container span {
+    font-weight: bold;
+}
+
+/* Styling for delete icon container */
+.delete-icon-container {
+    margin-left: auto;
+}
+
+/* Styling for feed header */
+.feed-header {
+    background-color: white;
+}
+
+/* Styling for feed header text */
+.feed-header h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* Hide scrollbar in feed section */
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+/* Styling for placeholder in new tweet input */
+.new-tweet::placeholder {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+/* Styling for second type of sidebar option */
+.sidebarOption2 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styling for heading in second sidebar option */
+.sidebarOption2 h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* Styling for retweeted tweets */
+.retweeted-tweet {
+    padding-left: 3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: smaller;
+    color: rgb(139, 138, 138);
+    font-weight: 500;
+}
+
+/* Styling for profile section */
+.profile {
+    flex: 0.6;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar in profile section */
+.profile::-webkit-scrollbar {
+    display: none;
+}
+
+/* Styling for profile details container */
+.profile-details {
+    height: 100%;
+    margin-top: 0.5rem;
+    background-image: linear-gradient(
+        to bottom,
+        var(--twitter-color) 20%,
+        white 20% 80%
+    );
+}
+
+/* Styling for profile information image container */
+.profile-information-img {
+    width: 7rem;
+    align-items: center;
+}
+
+/* Styling for profile information image */
+.profile-information-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Styling for follow and unfollow button */
+.profile-follow-andu-nfollow-btn {
+    background: black;
+    width: 6rem;
+}
+
+/* Styling for follow button in profile section */
+.profile-followbtn {
+    margin-top: 5.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Styling for profile name */
+.profile-name h2 {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* Styling for span within profile name */
+.profile-name span {
+    font-size: medium;
+    color: gray;
+}
+
+/* Styling for other profile details */
+.other-details {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Styling for location details */
+.location {
+    padding-left: 1rem;
+}
+
+/* Styling for followers and following details */
+.followers-n-following {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+/* Styling for followers section */
+.followers {
+    padding-left: 0.7rem;
+}
+
+/* Styling for heading of tweets in profile */
+.heading-tweets-profile {
+    padding-top: 1rem;
+    font-weight: 900;
+}
+
+/* Styling for debugging CSS styles during conversion */
+.name-n-username-container h2 {
+    width: 110%;
+}
+
+/* Styling for like icon within container */
+.like-icon-container a {
+    text-decoration: none; color: #f55050; font-weight: 500;
+}
+
+/* Styling for comment icon within container */
+.comment-icon-container a {
+    text-decoration: none; color: #50b7f5; font-weight: 500;
+}
+
+/* Styling for following span */
+.following span {
+    margin-right: 0.3rem;
+}
+
+/* Styling for followers span */
+.followers span {
+    margin-right: 0.3rem;
+}
